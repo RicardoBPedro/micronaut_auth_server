@@ -1,5 +1,7 @@
 # Micronaut JWT Authenticantion Server
-This server is build under Micronaut + JWT + PostgreSQL + Jooq + Flyway + Lombok in order to create and manage users login where Jooq is used to generate some class files at build time based on the migration file `resources/db/postgres/V1__create_user_table.sql`
+This server is build under Micronaut + JWT + PostgreSQL + Jooq + Flyway + Lombok in order to create and manage users login.
+
+Jooq is used to generate some class files at build time based on the migration file `resources/db/postgres/V1__create_user_table.sql`
 
 ### Requirements
 * [JAVA 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
@@ -14,8 +16,10 @@ In order to build the project run the command below.
 ```
 It will generate the missing files and setup the Postgresql docker container.
 
-In order to remove the docker container and its database, run `docker rm -f -v <container_name>`
+In order to remove the docker container and its database, run `docker rm -f -v <container_name>`.
+
 Use the string connection `jdbc:postgresql://127.0.0.1:5432/mmorpg_auth`, with user `mmorpg_auth` and password `123` in order to connect to the PostgreSQL docker containe.
+
 In order to change this database configs, is must update the ***build.gradle***, ***docker-compose.yml*** and ***application.yml***
 ## Authentication
 
@@ -29,7 +33,7 @@ In order to register you can make a ***POST*** request to `{{api_url}}/register`
 ```
 where the `{{api_url}}` can be set to `localhost:8080`. The port can be configured in application.yml configuration file.
 
-This functionality is configured in UnsecuredAccountController
+This functionality is configured in ***UnsecuredAccountController***.
 
 In order to sign in, make a ***POST*** request to `{{api_url}}/login` with body of:
 ```
