@@ -19,7 +19,7 @@ In order to remove the docker container and its database, run:
 ```
 docker rm -f -v <container_name>
 ```
-Use the string connection below, with user mmorpg_auth and password 123, in order to connect to the PostgreSQL docker containe:
+Use the string connection below, with user ***mmorpg_auth*** and*** password 123***, in order to connect to the PostgreSQL docker containe:
 ```
 jdbc:postgresql://127.0.0.1:5432/mmorpg_auth
 ```
