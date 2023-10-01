@@ -10,7 +10,7 @@ Jooq is used to generate some class files at `build time` based on the migration
 ## Getting started
 
 
-:warning: BEFORE START, MAKE SURE DOCKER ENVIROMENT IS UP AND RUNNING.
+:warning: :warning: BEFORE START, MAKE SURE DOCKER ENVIROMENT IS UP AND RUNNING. :warning: :warning:
 
 
 In order to build the project, run the command below.
