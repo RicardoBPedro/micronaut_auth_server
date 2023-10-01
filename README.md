@@ -1,6 +1,5 @@
 # Micronaut JWT Authenticantion Server
-This server is build under Micronaut + JWT + PostgreSQL + Jooq + Flyway + Lombok in order to create and manage users login.\n
-Jooq is used to generate some class files at build time based on the migration file resources/db/postgres/V1__create_user_table.sql
+This server is build under Micronaut + JWT + PostgreSQL + Jooq + Flyway + Lombok in order to create and manage users login where Jooq is used to generate some class files at build time based on the migration file `resources/db/postgres/V1__create_user_table.sql`
 
 ### Requirements
 * [JAVA 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
