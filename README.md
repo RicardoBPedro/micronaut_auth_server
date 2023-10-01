@@ -10,7 +10,10 @@ Jooq is used to generate some class files at build time based on the migration f
 ## Getting started
 
 :warning: Before start, make sure your Docker environment is up and running.
-In order to build the project run the command ```./gradlew build```.
+In order to build the project run the command below.
+```
+./gradlew build
+```
 
 It will generate the missing files and setup the Postgresql docker container.
 
