@@ -1,7 +1,7 @@
 # Micronaut JWT Authenticantion Server
 This server is build under Micronaut + JWT + PostgreSQL + Jooq + Flyway + Lombok in order to create and manage users login.
 
-Jooq is used to generate some class files at build time based on the migration file `resources/db/postgres/V1__create_user_table.sql`
+Jooq is used to generate some class files at `build time` based on the migration file `resources/db/postgres/V1__create_user_table.sql`
 
 ### Requirements
 * [JAVA 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
@@ -9,20 +9,28 @@ Jooq is used to generate some class files at build time based on the migration f
 * [Docker](https://www.docker.com/products/docker-desktop/)
 ## Getting started
 
-:warning: Before start, make sure your Docker environment is up and running.
-In order to build the project run the command below.
+
+:warning: BEFORE START, MAKE SURE DOCKER ENVIROMENT IS UP AND RUNNING.
+
+
+In order to build the project, run the command below.
 ```
 ./gradlew build
 ```
 
-It will generate the missing files and setup the Postgresql docker container.
+It will generate the missing files, setup and start the Postgresql docker container.
 
 In order to remove the docker container and its database, run `docker rm -f -v <container_name>`.
 
 Use the string connection ```jdbc:postgresql://127.0.0.1:5432/mmorpg_auth```, with user ```mmorpg_auth``` and password ```123``` in order to connect to the PostgreSQL docker containe.
 
-In order to change this database configs, is must update the ***build.gradle***, ***docker-compose.yml*** and ***application.yml***
+In order to change this database configs, you must update the ***build.gradle***, ***docker-compose.yml*** and ***application.yml***.
 ## Authentication
+
+In order to start the application, run the command below.
+```
+./gradlew run
+```
 
 In order to register you can make a ***POST*** request to ```localhost:8080/register``` with body of
 ```
