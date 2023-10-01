@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mmorpg_auth:
+    image: postgres:16.0
+    environment:
+      - POSTGRES_DB=mmorpg_auth
+      - POSTGRES_USER=mmorpg_auth
+      - POSTGRES_PASSWORD=123
+      - PGDATA=/var/lib/pgsql_docker/data
+    ports:
+      - "5432:5432"
